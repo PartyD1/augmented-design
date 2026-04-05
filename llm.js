@@ -45,7 +45,7 @@ async function run() {
   console.log(`Joke: ${joke}`);
 
   const response = await model.invoke(
-    `You are an expert basketball analyst.\n${userInput}\nStats: ${stats}\nJoke: ${joke}`
+    `You are an expert basketball analyst. ${userInput}. Stats: ${stats}. Joke: ${joke}`
   );
 
   console.log("LLM Output:\n", response);
