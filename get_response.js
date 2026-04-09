@@ -9,7 +9,9 @@ const model = new ChatOpenAI({
   temperature: 0.7,
   maxTokens: 1000,
 });
+
 const systemPrompt = `You are an expert basketball analyst. You explain what each statistic is.`;
+
 const getNBAStats = tool(
   ({ player }) => {
     const fakeDB = {
